@@ -1,0 +1,175 @@
+/*styling sass*/
+
+@import '_size';
+@import '_color';
+@import '_font';
+
+nav{
+    .nav-link{
+        color:$testi;
+        &:hover{
+            color:$hover;
+        }
+    }
+    img{
+        @include misure;
+    }
+    a{
+    color: $testi;
+    padding-left: 1.5rem;
+    text-decoration: none;
+    &:hover{
+        color: $hover;
+    }
+}
+}
+
+.settings {
+    max-width: 70rem;
+    a{
+    color: $info;
+    text-decoration: none;
+}
+}
+a{
+    color: $testi;
+    &:hover{
+        color: $hover;
+    }
+}
+
+select{
+    color: $testi;
+    background-color: black;
+    margin: 1rem;
+    height: 1.5rem;
+}
+
+$itemGrow: 1.2;
+$duration: 250ms;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: $bg;
+  font-family: $font;
+}
+
+.container{
+    color: $testi;
+    margin-left: auto;
+    margin-right: auto;
+    button{
+        background-color: transparent;
+        color: $testi;
+        border: 1px solid white;
+    }
+}
+
+.col{
+    // border: 1px solid white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,100%);
+  overflow:hidden;
+  scroll-behavior: smooth;
+
+  section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+    
+    .item {
+      padding: 0 2px;
+      transition: $duration all;
+      
+      &:hover { 
+        margin: 0 40px;
+        transform: scale(1.2);
+      }
+      
+    }
+    
+    a {
+      position: absolute;
+      color: $testi;
+      text-decoration: none;
+      font-size: 6em;
+      background:$bg;
+      width: 80px;
+      padding: 20px;
+      text-align: center;
+      z-index: 1;
+      
+      &:nth-of-type(1) {
+        top:0; bottom:0; left:0;
+        background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      }
+      &:nth-of-type(2) {
+        top:0; bottom:0; right: 0;
+        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      }
+      
+    }
+    
+  }
+}
+
+footer{
+    color: grey;
+    padding: 0 4%;
+    ul{
+        list-style: none;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 0 0 14px;
+    padding: 0;
+    li{
+        flex-basis: 25%;
+    }
+    }
+    a{
+        color: $testi;
+        padding-right: 1rem;
+        text-decoration: none;
+        &:hover{
+            color: $hover;
+        };
+    }
+    i{
+       font-size: 1.5rem;
+    }
+    button{
+        background-color: transparent;
+        color: $testi;
+        border: 1px solid white;
+    }
+    p{
+        color: $testi;
+        font-size: 0.9rem;
+    }
+}
+
+.lang{
+    
+        color: $testi;
+        background-color: black;
+        height: 1.5rem;
+        margin: 0;
+    
+}
+
+.settings a{
+    color: $info;
+}
+
